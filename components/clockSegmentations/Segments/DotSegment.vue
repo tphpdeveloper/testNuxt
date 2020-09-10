@@ -34,6 +34,6 @@ export default {
 
 <style scoped>
   .dotSegment {
-    width: 25%;
+    width: 60%;
   }
 </style>

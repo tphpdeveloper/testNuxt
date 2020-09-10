@@ -61,10 +61,8 @@ export default {
     }
   },
   watch: {
-    num () {
-      // eslint-disable-next-line
-      console.log('parent', this.num)
-      switch (this.num) {
+    num (val) {
+      switch (val) {
         case 0:
           this.section = Object.assign({}, this.defaultSection)
           this.section.center = false

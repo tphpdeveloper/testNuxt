@@ -1,8 +1,8 @@
 <template>
-  <div class="d-flex justify-content-center">
+  <div class="d-flex justify-content-center align-items-center">
     <div class="time d-flex justify-content-between">
       <NumberSegment :num="hFirst" :color="color" />
-      <NumberSegment :num="0" :color="color" />
+      <NumberSegment :num="hSecond" :color="color" />
     </div>
     <div class="secondsDot">
       <DotsSegment :visibility="visibilityDot" :color="color" />
@@ -49,15 +49,15 @@ export default {
     this.generateTime()
   },
   methods: {
-    generateTime () {
-      const date = new Date()
-      this.setHour(this.trimNumberBySingleNumber(date.getHours()))
-      this.setMinute(this.trimNumberBySingleNumber(date.getMinutes()))
-      this.setSecond(this.trimNumberBySingleNumber(date.getSeconds()))
+    async generateTime () {
+      const date = await new Date()
+      this.setHour(this.splitNumbersByNumber(date.getHours()))
+      this.setMinute(this.splitNumbersByNumber(date.getMinutes()))
+      this.setSecond(this.splitNumbersByNumber(date.getSeconds()))
       this.visibilityDot = true
       setTimeout(this.generateTime, 1000)
     },
-    trimNumberBySingleNumber (number) {
+    splitNumbersByNumber (number) {
       const numbers = number.toString().split('')
       if (numbers.length === 1) {
         numbers.unshift('0')
@@ -82,13 +82,15 @@ export default {
 
 <style scoped>
 .time{
-  height: 45px;
   width: 60px;
 }
 
 .secondsDot {
   margin: 0 10px;
-  width: 30px;
-  height: 100%;
+  width: 14px;
+}
+
+.time, .secondsDot {
+  height: 45px;
 }
 </style>

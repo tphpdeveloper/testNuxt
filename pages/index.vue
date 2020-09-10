@@ -10,7 +10,7 @@
           <DotsSegment :visibility="visibilityDot" :color="color" />
         </div>
         <div class="time d-flex justify-content-between">
-          <NumberSegment :num="mFirst" :color="color" />
+          <NumberSegment :num="0" :color="color" />
           <NumberSegment :num="mSecond" :color="color" />
         </div>
         <div class="secondsDot">
@@ -47,7 +47,7 @@ export default {
       mSecond: 0,
       sFirst: 0,
       sSecond: 0,
-      color: 'green',
+      color: 'silver',
       visibilityDot: true
     }
   },

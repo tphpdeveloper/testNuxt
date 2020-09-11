@@ -23,8 +23,8 @@
 
 <script>
 
-import NumberSegment from '@/components/clockSegmentations/NumberSegment'
-import DotsSegment from '@/components/clockSegmentations/DotsSegment'
+import NumberSegment from '@/components/Helpers/ClockSegmentations/NumberSegment'
+import DotsSegment from '@/components/Helpers/ClockSegmentations/DotsSegment'
 
 export default {
   name: 'Clock',
@@ -59,8 +59,8 @@ export default {
     },
     splitNumbersByNumber (number) {
       const numbers = number.toString().split('')
-      if (numbers.length === 1) {
-        numbers.unshift('0')
+      if (Number(numbers.length) === 1) {
+        numbers.unshift(0)
       }
       return numbers
     },

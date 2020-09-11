@@ -2,7 +2,7 @@
   <b-container>
     <b-row>
       <b-col cols="6">
-        <Clock />
+        1
       </b-col>
       <b-col cols="6">
         2
@@ -13,13 +13,8 @@
 
 <script>
 
-import Clock from '~/components/clockSegmentations/Clock'
-
 export default {
-  name: 'MainPage',
-  components: {
-    Clock
-  }
+  name: 'MainPage'
 }
 </script>
 

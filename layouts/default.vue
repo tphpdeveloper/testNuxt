@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Nuxt />
+    <header><Header /></header>
+    <b-container> <Nuxt /></b-container>
   </div>
 </template>
 
@@ -10,13 +11,21 @@ html, body {
 }
 
 body {
-  background-image: url("~static/img/swiss-mountains.jpg");
+  background-image: url("~static/img/time.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 * {
-  background-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 </style>
+<script>
+import Header from '@/components/Client/Header/Header'
+export default {
+  components: { Header }
+}
+</script>

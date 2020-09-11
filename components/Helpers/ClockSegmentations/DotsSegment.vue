@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import DotSegment from '@/components/clockSegmentations/Segments/DotSegment'
+import DotSegment from '@/components/Helpers/ClockSegmentations/Segments/DotSegment'
 export default {
   name: 'DotsSegment',
   components: { DotSegment },

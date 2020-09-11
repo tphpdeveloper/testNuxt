@@ -31,8 +31,8 @@
 </template>
 
 <script>
-import VerticalSegment from '@/components/clockSegmentations/Segments/VerticalSegment'
-import HorizontalSegment from '@/components/clockSegmentations/Segments/HorizontalSegment'
+import VerticalSegment from '@/components/Helpers/ClockSegmentations/Segments/VerticalSegment'
+import HorizontalSegment from '@/components/Helpers/ClockSegmentations/Segments/HorizontalSegment'
 export default {
   name: 'NumberSegment',
   components: { HorizontalSegment, VerticalSegment },
@@ -62,6 +62,14 @@ export default {
   },
   watch: {
     num (val) {
+      this.setSectionInfo(val)
+    }
+  },
+  created () {
+    this.setSectionInfo(this.num)
+  },
+  methods: {
+    setSectionInfo (val) {
       switch (val) {
         case 0:
           this.section = Object.assign({}, this.defaultSection)

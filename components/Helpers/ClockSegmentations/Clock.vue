@@ -40,7 +40,7 @@ export default {
       mSecond: 0,
       sFirst: 0,
       sSecond: 0,
-      color: 'silver',
+      color: '#000',
       visibilityDot: true
     }
   },

@@ -1,14 +1,11 @@
 <template>
-  <b-container>
-    <b-row>
-      <b-col cols="6">
-        1
-      </b-col>
-      <b-col cols="6">
-        2
-      </b-col>
-    </b-row>
-  </b-container>
+  <b-row>
+    <b-col cols="12">
+      <div class="contentPage" :style="{ height: '100%' }">
+        hello world
+      </div>
+    </b-col>
+  </b-row>
 </template>
 
 <script>

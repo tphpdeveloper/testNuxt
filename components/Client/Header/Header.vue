@@ -13,5 +13,9 @@ export default {
 </script>
 
 <style scoped>
-
+  .parentHeader {
+    background-color: whitesmoke;
+    padding: 10px 0;
+    text-align: center;
+  }
 </style>

@@ -1,8 +1,9 @@
 <template>
-  <div>
+  <b-container>
     <header><Header /></header>
-    <b-container> <Nuxt /></b-container>
-  </div>
+    <nav><Menu /></nav>
+    <Nuxt />
+  </b-container>
 </template>
 
 <style>
@@ -15,6 +16,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 * {
@@ -25,7 +27,8 @@ body {
 </style>
 <script>
 import Header from '@/components/Client/Header/Header'
+import Menu from '@/components/Client/Header/Menu'
 export default {
-  components: { Header }
+  components: { Menu, Header }
 }
 </script>

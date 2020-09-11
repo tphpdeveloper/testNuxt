@@ -62,14 +62,14 @@ export default {
   },
   watch: {
     num (val) {
-      this.setSectionInfo(val)
+      this.enableSection(val)
     }
   },
   created () {
-    this.setSectionInfo(this.num)
+    this.enableSection(this.num)
   },
   methods: {
-    setSectionInfo (val) {
+    enableSection (val) {
       switch (val) {
         case 0:
           this.section = Object.assign({}, this.defaultSection)

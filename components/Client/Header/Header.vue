@@ -14,6 +14,7 @@ export default {
 
 <style scoped>
   .parentHeader {
+    margin: 15px 0;
     padding: 10px 0;
     text-align: center;
   }

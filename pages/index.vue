@@ -1,11 +1,13 @@
 <template>
-  <b-row>
-    <b-col cols="12">
-      <div class="contentPage" :style="{ height: '100%' }">
-        hello world
-      </div>
-    </b-col>
-  </b-row>
+  <b-container>
+    <b-row>
+      <b-col cols="12">
+        <div class="contentPage">
+          test data for text
+        </div>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script>

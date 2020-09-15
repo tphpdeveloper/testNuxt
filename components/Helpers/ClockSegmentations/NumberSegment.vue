@@ -138,16 +138,13 @@ export default {
     height: 10%;
   }
 
-  .heightColHorizontal {
+  .heightColHorizontal,
+  .heightColVertical {
     height: 100%;
   }
 
   .heightRowVertical {
     height: 35%;
-  }
-
-  .heightColVertical {
-    height: 100%;
   }
 
 </style>

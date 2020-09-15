@@ -1,9 +1,13 @@
 <template>
-  <b-container>
-    <header><Header /></header>
-    <nav><Menu /></nav>
+  <div>
+    <header>
+      <b-container>
+        <Header />
+      </b-container>
+    </header>
+    <!--    <nav><Menu /></nav>-->
     <Nuxt />
-  </b-container>
+  </div>
 </template>
 
 <style>
@@ -17,6 +21,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+header {
+  padding-top: 1px;
 }
 </style>
 

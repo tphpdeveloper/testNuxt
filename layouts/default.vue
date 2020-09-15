@@ -8,7 +8,7 @@
 
 <style>
 html, body {
-  height: 100%;
+    height: 100vh;
 }
 
 body {
@@ -18,13 +18,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 </style>
+
 <script>
 import Header from '@/components/Client/Header/Header'
 import Menu from '@/components/Client/Header/Menu'

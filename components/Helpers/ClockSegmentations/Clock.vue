@@ -45,7 +45,6 @@ export default {
     }
   },
   mounted () {
-    setInterval(() => { this.visibilityDot = false }, 500)
     this.generateTime()
   },
   methods: {
@@ -55,6 +54,7 @@ export default {
       this.setMinute(this.splitNumbersByNumber(date.getMinutes()))
       this.setSecond(this.splitNumbersByNumber(date.getSeconds()))
       this.visibilityDot = true
+      setTimeout(() => { this.visibilityDot = false }, 500)
       setTimeout(this.generateTime, 1000)
     },
     splitNumbersByNumber (number) {
@@ -91,6 +91,6 @@ export default {
 }
 
 .time, .secondsDot {
-  height: 45px;
+  height: 44px;
 }
 </style>

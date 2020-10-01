@@ -1,6 +1,18 @@
-$mainColor: whitesmoke;
-
+@import "variables";
 
 .parentHeader, .contentPage {
   background-color: $mainColor;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url("~static/img/slide-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

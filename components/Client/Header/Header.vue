@@ -22,13 +22,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+  @import "~/assets/scss/variables";
+
   .header_column {
     text-align: center;
     padding: 5px 10px;
-    border-left: 1px solid rgba(255, 255, 255, .12);
+    border-left: 1px solid $headerBorderColor;
   }
   .header_column:last-child {
-    border-right: 1px solid rgba(255, 255, 255, .12);
+    border-right: 1px solid $headerBorderColor;
   }
 </style>

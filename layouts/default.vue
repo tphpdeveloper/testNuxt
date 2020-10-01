@@ -5,7 +5,7 @@
         <Header />
       </b-container>
     </header>
-    <Menu />
+    <!--    <Menu />-->
     <Nuxt />
   </div>
 </template>

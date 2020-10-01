@@ -1,11 +1,15 @@
 <template>
   <b-container>
     <b-row>
-      <b-col class="header_column" md="4" />
+      <b-col class="header_column" md="4">
+        logo
+      </b-col>
       <b-col class="header_column" md="4">
         <Clock />
       </b-col>
-      <b-col class="header_column" md="4" />
+      <b-col class="header_column" md="4">
+        current timezone
+      </b-col>
     </b-row>
   </b-container>
 </template>
@@ -20,6 +24,7 @@ export default {
 
 <style scoped>
   .header_column {
+    text-align: center;
     padding: 5px 10px;
     border-left: 1px solid rgba(255, 255, 255, .12);
   }

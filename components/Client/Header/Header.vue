@@ -16,11 +16,9 @@
 
 <script>
 import Clock from '@/components/Helpers/ClockSegmentations/Clock'
-import TimeZoneNames from '@/mixins/timeZoneNames'
 export default {
   name: 'Header',
   components: { Clock },
-  mixins: [TimeZoneNames],
   data () {
     return {
       timeZone: ''

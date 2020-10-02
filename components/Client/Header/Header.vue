@@ -1,14 +1,14 @@
 <template>
   <b-container>
     <b-row>
-      <b-col class="header_column" md="4">
+      <b-col class="header_column d-flex align-items-center justify-content-center" md="4">
         logo
       </b-col>
-      <b-col class="header_column" md="4">
+      <b-col class="header_column d-flex align-items-center justify-content-center" md="4">
         <Clock />
       </b-col>
-      <b-col class="header_column" md="4">
-        current timezone
+      <b-col class="header_column d-flex align-items-center justify-content-center" md="4">
+        {{ timeZone }}
       </b-col>
     </b-row>
   </b-container>
@@ -16,9 +16,25 @@
 
 <script>
 import Clock from '@/components/Helpers/ClockSegmentations/Clock'
+import TimeZoneNames from '@/mixins/timeZoneNames'
 export default {
   name: 'Header',
-  components: { Clock }
+  components: { Clock },
+  mixins: [TimeZoneNames],
+  data () {
+    return {
+      timeZone: ''
+    }
+  },
+  mounted () {
+    const minutes = 0 // (new Date()).getTimezoneOffset()
+    let hour = 0
+    if (minutes > 0 || minutes < 0) {
+      hour = (minutes / 60) * -1
+      hour = (minutes < 0) ? `+${hour}` : hour
+    }
+    this.timeZone = `GMT ${hour}`
+  }
 }
 </script>
 
@@ -27,7 +43,6 @@ export default {
   @import "~/assets/scss/variables";
 
   .header_column {
-    text-align: center;
     padding: 5px 10px;
     border-left: 1px solid $headerBorderColor;
   }

@@ -16,3 +16,28 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.card-header-my .card-header {
+  background-color: transparent;
+}
+
+.card-header-my .nav-item {
+  padding: 0;
+  margin-right: 10px;
+}
+
+.card-header-my .nav-item:last-child {
+  margin-right: 0;
+}
+.card-header-my .nav-link {
+  border: 2px solid transparent;
+  transition: border linear .5s;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.card-header-my .nav-link.active,
+.card-header-my .nav-link:hover {
+  border: 2px solid #fff;
+  background-color: transparent;
+}

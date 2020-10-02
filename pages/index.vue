@@ -29,34 +29,4 @@ export default {
   background-color: transparent;
   border: none;
 }
-
-.card-header-my >>> .card-header {
-  background-color: transparent;
-}
-
-.card-header-my >>> .nav-item {
-  border: 2px solid transparent;
-  padding: 5px 10px;
-  transition: border linear .5s;
-  margin-right: 10px;
-}
-.card-header-my >>> .nav-item:hover {
-  border: 2px solid #fff;
-}
-
-.card-header-my >>> .nav-item:last-child {
-  margin-right: 0;
-}
-.card-header-my >>> .nav-link {
-  background-color: transparent;
-  padding: 0;
-  color: #fff;
-}
-
-.card-header-my >>> .nav-link {
-  background-color: transparent;
-  padding: 0;
-  color: #fff;
-}
-
 </style>

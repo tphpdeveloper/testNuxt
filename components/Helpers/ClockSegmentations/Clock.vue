@@ -32,6 +32,12 @@ export default {
     DotsSegment,
     NumberSegment
   },
+  props: {
+    color: {
+      type: String,
+      default: 'green'
+    }
+  },
   data () {
     return {
       hFirst: 0,
@@ -40,7 +46,6 @@ export default {
       mSecond: 0,
       sFirst: 0,
       sSecond: 0,
-      color: '#000',
       visibilityDot: true
     }
   },

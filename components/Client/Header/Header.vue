@@ -5,7 +5,7 @@
         logo
       </b-col>
       <b-col class="header_column d-flex align-items-center justify-content-center" md="4">
-        <Clock />
+        <Clock color="#fff" />
       </b-col>
       <b-col class="header_column d-flex align-items-center justify-content-center" md="4">
         {{ timeZone }}
@@ -43,8 +43,10 @@ export default {
   .header_column {
     padding: 5px 10px;
     border-left: 1px solid $headerBorderColor;
+    color: #fff;
   }
   .header_column:last-child {
     border-right: 1px solid $headerBorderColor;
   }
+
 </style>

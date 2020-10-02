@@ -25,7 +25,7 @@ export default {
     }
   },
   mounted () {
-    const minutes = 0 // (new Date()).getTimezoneOffset()
+    const minutes = (new Date()).getTimezoneOffset()
     let hour = 0
     if (minutes > 0 || minutes < 0) {
       hour = (minutes / 60) * -1
